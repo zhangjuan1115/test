@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>德育考评-新增</title>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/initfont.js"></script>
+    <link href="css/weui.min.css" rel="stylesheet" />
+    <link href="css/jquery-weui.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="g-header ">
+        <a class="u-back" href="01教师-德育考评.html"> <i class="ico ico-back"></i>
+    </a>
+        <h1>新建德育考评</h1>
+        <a class="header-right u-btn" href="01教师-德育考评.html">提交</a>
+    </div>
+    <!-- /头部 -->
+    <!-- 主内容 -->
+    <div class="g-body xnofoot">
+        <div class="m-form">
+            <div class="item">
+                <span class="tit"><span class="u-must">*</span>姓名</span>
+                <a class="right js-selectStu">周莎<span class="u-no">(430102123456789321)</span> <i class="ico ico-next"></i></a>
+            </div>
+
+            <div class="item">
+                <span class="tit"><span class="u-must">*</span>登记日期</span>
+                <a class="right">
+         <input type="text" id="date" value=""/>
+          <i class="ico ico-next"></i></a>
+            </div>
+
+            <div class="item">
+                <span class="tit"><span class="u-must">*</span>指标名称</span>
+                <a class="right js-selIndex">个人仪表 <i class="ico ico-next"></i></a>
+            </div>
+
+            <div class="item">
+                <span class="tit"><span class="u-must">*</span>项目名称</span>
+                <a class="right js-seltItem">穿着整洁<i class="ico ico-next"></i></a>
+            </div>
+            <div class="item">
+                <span class="tit">加分值</span>
+                <span class="right">
+          <span class="u-add">+10分</span>
+                <!--加分值样式u-add 减分值样式u-minus-->
+                <!-- <span class="u-minus">-10分</span> -->
+                </span>
+            </div>
+
+            <div class="item">
+                <span class="tit">减分值</span>
+                <span class="right"><input type="number" class="u-number" placeholder="请输入数字"></span>
+            </div>
+
+            <div class="item xmiddle">
+                <span class="tit2">备注</span>
+                <textarea placeholder="请输入备注100字以内~" row="3"></textarea>
+            </div>
+
+
+        </div>
+    </div>
+    <!--单选学生底部弹窗-->
+    <div class="m-pop-select xselstu" id="selectStu">
+        <div class="m-modal">
+            <div class="toolbar">
+                <div class="toolbar-inner"><a class="close-picker cancel-button">取消</a> <a class="picker-button close-picker">确定</a> </div>
+            </div>
+            <div class="list">
+                <div class="item selected">
+                    <label>
+                  <h4>李晓辉</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>欧阳娜娜娜</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>张晓月</h4>
+                  <h5>1003201010</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>赵青</h4>
+                  <h5>430102123456789321</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item">
+                    <label>
+                  <h4>李晓辉</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>欧阳娜娜娜</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>张晓月</h4>
+                  <h5>1003201010</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>赵青</h4>
+                  <h5>430102123456789321</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item">
+                    <label>
+                  <h4>李晓辉</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>欧阳娜娜娜</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>张晓月</h4>
+                  <h5>1003201010</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>赵青</h4>
+                  <h5>430102123456789321</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item">
+                    <label>
+                  <h4>李晓辉</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>欧阳娜娜娜</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>张晓月</h4>
+                  <h5>1003201010</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>赵青</h4>
+                  <h5>430102123456789321</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item">
+                    <label>
+                  <h4>李晓辉</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>欧阳娜娜娜</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>张晓月</h4>
+                  <h5>1003201010</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>赵青</h4>
+                  <h5>430102123456789321</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item">
+                    <label>
+                  <h4>李晓辉</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>欧阳娜娜娜</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>张晓月</h4>
+                  <h5>1003201010</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>赵青</h4>
+                  <h5>430102123456789321</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item">
+                    <label>
+                  <h4>李晓辉</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>欧阳娜娜娜</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>张晓月</h4>
+                  <h5>1003201010</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>赵青</h4>
+                  <h5>430102123456789321</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item">
+                    <label>
+                  <h4>李晓辉</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>欧阳娜娜娜</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>张晓月</h4>
+                  <h5>1003201010</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>赵青</h4>
+                  <h5>430102123456789321</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item">
+                    <label>
+                  <h4>李晓辉</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>欧阳娜娜娜</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>张晓月</h4>
+                  <h5>1003201010</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>赵青</h4>
+                  <h5>430102123456789321</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item">
+                    <label>
+                  <h4>李晓辉</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>欧阳娜娜娜</h4>
+                  <h5>430102123456789321</h5> <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>张晓月</h4>
+                  <h5>1003201010</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+                <div class="item ">
+                    <label>
+                  <h4>赵青</h4>
+                  <h5>430102123456789321</h5>
+                  <i class="ico ico-selected"></i>
+                </label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--/单选学生底部弹窗-->
+    <!--单选项目指标底部弹窗-->
+    <div class="m-pop-select xselindex" id="selectIndex">
+        <div class="m-modal">
+            <div class="toolbar">
+                <div class="toolbar-inner"><a class="close-picker cancel-button">取消</a> <a class="picker-button close-picker">确定</a> </div>
+            </div>
+            <div class="list">
+                <div class="item selected"><label><span>迟到</span><i class="ico ico-selected"></i></label></div>
+                <div class="item "><label><span>指标最长可以显示十四个字教室名称最长可以显示十四个字</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>遵守纪律</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>个人仪表</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>迟到</span><i class="ico ico-selected"></i></label></div>
+                <div class="item "><label><span>指标最长可以显示十四个字教室名称最长可以显示十四个字</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>遵守纪律</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>个人仪表</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>迟到</span><i class="ico ico-selected"></i></label></div>
+                <div class="item "><label><span>指标最长可以显示十四个字教室名称最长可以显示十四个字</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>遵守纪律</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>个人仪表</span><i class="ico ico-selected"></i></label></div>
+                <div class="item "><label><span>指标最长可以显示十四个字教室名称最长可以显示十四个字</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>遵守纪律</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>个人仪表</span><i class="ico ico-selected"></i></label></div>
+            </div>
+        </div>
+    </div>
+    <!--/单选项目指标底部弹窗-->
+    <!--单选项目名称底部弹窗-->
+    <div class="m-pop-select xselindex" id="selectItem">
+        <div class="m-modal">
+            <div class="toolbar">
+                <div class="toolbar-inner"><a class="close-picker cancel-button">取消</a> <a class="picker-button close-picker">确定</a> </div>
+            </div>
+            <div class="list">
+                <div class="item selected"><label><span>十字路口行车秩序</span><i class="ico ico-selected"></i></label></div>
+                <div class="item "><label><span>项目名称最长可以显示十四个字教室名称最长可以显示十四个字</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>遵守纪律</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>个人仪表</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>团结友爱</span><i class="ico ico-selected"></i></label></div>
+                <div class="item "><label><span>项目名称最长可以显示十四个字教室名称最长可以显示十四个字</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>遵守纪律</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>个人仪表</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>团结友爱</span><i class="ico ico-selected"></i></label></div>
+                <div class="item "><label><span>项目名称最长可以显示十四个字教室名称最长可以显示十四个字</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>遵守纪律</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>个人仪表</span><i class="ico ico-selected"></i></label></div>
+                <div class="item "><label><span>项目名称最长可以显示十四个字教室名称最长可以显示十四个字</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>遵守纪律</span><i class="ico ico-selected"></i></label></div>
+                <div class="item"><label><span>个人仪表</span><i class="ico ico-selected"></i></label></div>
+            </div>
+        </div>
+    </div>
+    <!--/单选项目指标底部弹窗-->
+    <!-- /主内容 -->
+
+
+    <script src="js/fastclick.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/twui.js"></script>
+
+    <script>
+        //初始化日期插件
+        $("#date").calendar();
+    </script>
+</body>
+
+</html>

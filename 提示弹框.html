@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>德育日常管理系统</title>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/initfont.js"></script>
+    <link href="css/weui.min.css" rel="stylesheet" />
+    <link href="css/jquery-weui.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <style type="text/css">
+        .btn-green {
+            display: block;
+            font-size: 0.8rem;
+            background-color: #04a4ff;
+            padding: 0 30px;
+            color: #fff;
+            height: 30px;
+            line-height: 30px;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="g-header ">
+        <a class="u-back"><i class="ico ico-back"></i></a>
+        <h1>德育考评</h1>
+    </div>
+    <!-- /头部 -->
+
+    <!-- 主内容 -->
+    <!-- 主体 -->
+    <div class="g-body " style="padding:30px;">
+        <a class="btn btn-green" id="btn-tips">提交成功弹框</a>
+        <a class="btn btn-green" id="btn-delete">删除提示弹窗</a>
+        <a class="btn btn-green" id="btn-back">新增返回上一级页面</a>
+    </div>
+
+
+
+    <!-- /主体 -->
+    <!-- /主内容 -->
+
+
+
+    <script src="js/fastclick.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/twui.js"></script>
+    <script>
+        // 提示弹窗
+        $("#btn-tips").click(function() {
+            $.toast("提交成功");
+        });
+
+        //提示带确认按钮弹窗
+        $("#btn-delete").click(function() {
+            $.confirm({
+                text: '确定删除此条记录？',
+                onOK: function() {
+                    $.toast("删除成功");
+                },
+                onCancel: function() {}
+            });
+        });
+
+        //新增返回上一级页面
+        $("#btn-back").click(function() {
+            $.confirm({
+                text: '当前页面未保存，确定返回？',
+                onOK: function() {},
+                onCancel: function() {}
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>德育考评</title>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/initfont.js"></script>
+    <link href="css/weui.min.css" rel="stylesheet" />
+    <link href="css/jquery-weui.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="g-header ">
+        <a class="u-back"> <i class="ico ico-back"></i>
+    </a>
+        <h1 class="text">德育考评
+            <span class="termcon">
+        <input class="js-picker-input" type="text " name="" value="2017~2018学年下学期"  data-value="2" readonly="" id="select-term"> <i class="cart"></i>
+      </span>
+        </h1>
+    </div>
+    <!-- /头部 -->
+
+    <!--固定区域 -->
+    <div class="m-fixedcon">
+        <div class="m-flex">
+            <!--选择班级 -->
+            <div class="c-select jst-select flex-item">
+                <div class="select-value js-sv"></div>
+                <ul class="select-list js-sl">
+                    <li class="selected">16级5(2)班</li>
+                    <li>16级5(3)班</li>
+                    <li>16级5(4)班</li>
+                    <li>16级5(5)班</li>
+                    <li>16级5(6)班</li>
+                    <li>16级5(7)班</li>
+                    <li>16级5(8)班</li>
+                    <li>16级5(9)班</li>
+                    <li>16级5(10)班</li>
+                </ul>
+            </div>
+            <!-- /选择班级 -->
+            <!--选择菜单 -->
+            <div class="c-select jst-select flex-item">
+                <div class="select-value js-sv"></div>
+                <ul class="select-list js-sl">
+                    <li><a href="01教师-德育考评.html">考评登记</a></li>
+                    <li class="selected"><a href="01教师-德育考评-考评结果.html">考评结果</a></li>
+                </ul>
+            </div>
+            <!-- /选择菜单 -->
+        </div>
+        <!--搜索栏-->
+        <div class="weui-search-bar" id="searchBar">
+            <form class="weui-search-bar__form">
+                <div class="weui-search-bar__box"> <i class="weui-icon-search"></i>
+                    <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="学生名字" required="">
+                    <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                </div>
+                <label class="weui-search-bar__label" id="searchText"> <i class="weui-icon-search"></i>
+              <span>学生名字</span>
+            </label>
+            </form>
+            <a class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+        </div>
+        <!--/搜索栏-->
+    </div>
+    <!--/固定区域 -->
+
+    <!-- 主内容 -->
+    <div class="g-body">
+        <div class="m-list">
+            <div class="m-list-item xevaresult ">
+                <div class="content">
+                    <div class="u-header">
+                        <!--排名 前三名用u-num xno1 第4-10名用u-num xno2  10名以后用u-num-->
+                        <span class="u-num xno1">第1名</span>
+                        <span class="u-tit">欧阳娜娜</span><span class="u-no">(430102123456789321)</span>
+                    </div>
+                    <div class="u-body">
+                        <div class="m-flex">
+                            <p class="flex-item1"><span>加分项目数：</span><span>1项</span></p>
+                            <p class="flex-item2"><span>积累加分值：</span><span class="add">+10分</span></p>
+                        </div>
+                        <div class="m-flex">
+                            <p class="flex-item1"><span>减分项目数：</span><span>1项</span></p>
+                            <p class="flex-item2"><span>积累减分值：</span><span class="minus">-10分</span></p>
+                        </div>
+                        <div class="m-flex">
+                            <p class="flex-item1"><span>总分：</span><span>130分</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-list-item xevaresult">
+                <div class="content">
+                    <div class="u-header">
+                        <!--排名 前三名用u-num xno1 第4-10名用u-num xno2  10名以后用u-num-->
+                        <span class="u-num xno2">第4名</span>
+                        <span class="u-tit">欧阳娜娜</span><span class="u-no">(430102123456789321)</span>
+                    </div>
+                    <div class="u-body">
+                        <div class="m-flex">
+                            <p class="flex-item1"><span>加分项目数：</span><span>1项</span></p>
+                            <p class="flex-item2"><span>积累加分值：</span><span class="add">+10分</span></p>
+                        </div>
+                        <div class="m-flex">
+                            <p class="flex-item1"><span>减分项目数：</span><span>1项</span></p>
+                            <p class="flex-item2"><span>积累减分值：</span><span class="minus">-10分</span></p>
+                        </div>
+                        <div class="m-flex">
+                            <p class="flex-item1"><span>总分：</span><span>120分</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-list-item xevaresult">
+                <div class="content">
+                    <div class="u-header">
+                        <!--排名 前三名用u-num xno1 第4-10名用u-num xno2  10名以后用u-num-->
+                        <span class="u-num xno2">第10名</span>
+                        <span class="u-tit">欧阳娜娜</span><span class="u-no">(430102123456789321)</span>
+                    </div>
+                    <div class="u-body">
+                        <div class="m-flex">
+                            <p class="flex-item1"><span>加分项目数：</span><span>1项</span></p>
+                            <p class="flex-item2"><span>积累加分值：</span><span class="add">+10分</span></p>
+                        </div>
+                        <div class="m-flex">
+                            <p class="flex-item1"><span>减分项目数：</span><span>1项</span></p>
+                            <p class="flex-item2"><span>积累减分值：</span><span class="minus">-10分</span></p>
+                        </div>
+                        <div class="m-flex">
+                            <p class="flex-item1"><span>总分：</span><span>100分</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-list-item xevaresult">
+                <div class="content">
+                    <div class="u-header">
+                        <!--排名 前三名用u-num xno1 第4-10名用u-num xno2  10名以后用u-num-->
+                        <span class="u-num">第11名</span>
+                        <span class="u-tit">欧阳娜娜</span><span class="u-no">(430102123456789321)</span>
+                    </div>
+                    <div class="u-body">
+                        <div class="m-flex">
+                            <p class="flex-item1"><span>加分项目数：</span><span>1项</span></p>
+                            <p class="flex-item2"><span>积累加分值：</span><span class="add">+10分</span></p>
+                        </div>
+                        <div class="m-flex">
+                            <p class="flex-item1"><span>减分项目数：</span><span>1项</span></p>
+                            <p class="flex-item2"><span>积累减分值：</span><span class="minus">-10分</span></p>
+                        </div>
+                        <div class="m-flex">
+                            <p class="flex-item1"><span>总分：</span><span>90分</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <!-- 页脚 -->
+    <div class="g-footer">
+        <a class="hover-item  active" href="01教师-德育考评.html"><i class="ico ico-evaluate"></i>德育考评</a>
+        <a class="hover-item" href="02教师-干部管理.html"><i class="ico ico-leader"></i>干部管理</a>
+        <a class="hover-item" href="03教师-重点关注学生.html"><i class="ico ico-care"></i>重点关注</a>
+        <a class="hover-item" href="04教师-活动管理.html"><i class="ico ico-activity"></i>活动管理</a>
+        <a class="hover-item" href="05教师-实践管理.html"><i class="ico ico-practice"></i>实践管理</a>
+    </div>
+    <!-- /页脚 -->
+    <!-- /底部 -->
+
+
+
+    <!-- /主内容 -->
+
+
+
+    <script src="js/fastclick.js"></script>
+    <script src="js/jquery-weui.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/twui.js"></script>
+
+    <script>
+        //初始化学期时间选择框
+        $("#select-term").picker({
+            title: "",
+            toolbarTemplate: '<div class="toolbar">\
+          <div class="toolbar-inner">\
+          <a href="javascript:;" class="close-picker cancel-button">取消</a>\
+          <a href="javascript:;" class="picker-button close-picker">{{closeText}}</a>\
+          <h1 class="title">{{title}}</h1>\
+          </div>\
+          </div>',
+            toolbarCloseText: '确定',
+            cols: [{
+                textAlign: 'center',
+                values: ['1', '2', '3', '4'],
+                displayValues: ['2017~2018学年上学期', '2017~2018学年下学期', '2018~2019学年上学期', '2018~2019学年下学期']
+                //如果你希望显示文案和实际值不同，可以在这里加一个displayValues: [.....]
+            }]
+        });
+
+        // 在自定义picker控件相关的input元素绑定changed事件
+        // 该事件给开发调用，参数vulues是一个数组，包含picker中所有选中的列的值
+        $('.js-picker-input').on('changed', function(event, values) {
+            console.log($(this).attr('data-value'))
+        })
+    </script>
+</body>
+
+</html>
